@@ -1,7 +1,12 @@
-
+import Header from './components/Header';
+import Heroes from './components/Heroes';
+import './css/estilos.css'
 function App() {
   return (
-    <h2>Marvel App</h2>
+    <> 
+      <Header/>
+       <Heroes />
+    </>
   );
 }
 
