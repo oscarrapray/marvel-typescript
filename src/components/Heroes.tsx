@@ -8,7 +8,7 @@ const Heroes = () =>{
 
     const consultarApi = async () =>{
         let heroesArray:Array<character>=[]
-            const respuesta = await axios.get('http://gateway.marvel.com/v1/public/characters?ts=1&apikey=4531d217b229e96bad544de55c22cc51&hash=1e46284a8b81009fd3996f81fed32854')
+            const respuesta = await axios.get('https://gateway.marvel.com/v1/public/characters?ts=1&apikey=4531d217b229e96bad544de55c22cc51&hash=1e46284a8b81009fd3996f81fed32854')
             let resp = respuesta.data.data.results
             resp.forEach((item:any)=>{
                heroesArray.push({
